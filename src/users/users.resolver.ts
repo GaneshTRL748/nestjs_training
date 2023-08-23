@@ -36,7 +36,7 @@ export class UsersResolver {
   @Mutation(() => String)
   async updateUser(
     @Args('id') id: string,
-    @Args('userdto') userdto: userdto, // Create this input type according to your schema
+    @Args('userdto') userdto: userdto, 
   ) {
     const updatedUser = await this.usersService.updateUser(id, userdto);
     return updatedUser;
